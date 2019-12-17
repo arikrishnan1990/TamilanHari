@@ -153,5 +153,9 @@
 	.filter-button-group,.filter-button-group button{
 		width: 100%;
 	}
+	.fix img{
+		width: auto;
+		height: auto;
+	}
 	
 }
