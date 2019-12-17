@@ -1,0 +1,10 @@
+ .navbar-dark .navbar-brand{
+ 	color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+ }
+ .fix img{
+ 	height:185px ;
+ 	width:350px;
+ }
