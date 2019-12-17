@@ -146,5 +146,12 @@
 	.footer-distributed .footer-left{
 		text-align: center;
 	}
+	.cd-headline.clip span{
+		display: block;
+		text-align: center;
+	}
+	.filter-button-group,.filter-button-group button{
+		width: 100%;
+	}
 	
 }
