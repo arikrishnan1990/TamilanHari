@@ -1,0 +1,360 @@
+
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    pasific flight service
+Last change:    Initial RELEASED
+Primary use:    MultiPurpose many Page Template  
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Common styles
+2. Page loader / .page-loader
+3. Typography
+4. Buttons
+5. Forms fields
+6. Home sections / .home-section
+    6.1. Home content
+    6.2. Scroll down icon
+    6.3. Headings styles
+9. Sections styles / .page-section, .small-section, .split-section
+10. Services / .service-grid
+11. Team / .team-grid
+12. Features
+13. Shortcodes
+    27.1. Owl Carousel
+    27.2. Tabs
+    27.3. Tabs minimal
+    27.4. Alert messages
+    27.5. Accordion
+    27.6. Toggle
+    27.7. Progress bars
+    27.8. Font icons examples
+    27.9. Intro page
+14. Bootstrap multicolumn grid
+
+
+/*------------------------------------------------------------------
+# [Color codes]
+
+# Red (error) #b80617
+
+# Gray #4a4b4d
+
+
+# */
+
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body:               normal 14px/20px 'montserratregular';
+Headers:            montserrathairline;
+Section Title:      bold 3.6em/1.2em 'montserrathairline';
+Section Text:       normal 1.3em/1.6em 'montserratlight';
+
+-------------------------------------------------------------------*/
+
+
+
+/*reset*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,li,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:center;background:transparent}
+body{line-height:1;font-family: 'Lato', sans-serif;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+html{
+    position: relative;
+}
+.clearfix{ 
+    display: block }
+* html .clearfix {
+    height: 1% }
+.clearfix:after {
+    display: block;
+    height: 0;
+    clear: both;
+    content: '.';
+    visibility: hidden;}
+*+html .clearfix {
+    display: inline-block }
+    
+a{color:#4a4b4d;text-decoration:none}
+a:hover{color:#b80617;text-decoration:none}
+h1,h2,h3,h4,h5,h6{font: bold 3.6em/1.2em 'Conv_DINBdA';}
+ul,ul li{list-style:none;margin:0;padding:0}    
+.left{float:left}
+.right{float:right}
+body{
+        background: #a7d6c9;
+    overflow: hidden;
+}
+header{
+    padding: 3% 0;
+}
+section{
+        background: #a7d6c9;
+}
+.logo-div{
+    width:245px;
+    float: right;
+    margin-right:3%;
+    position: relative;
+}
+.logo-div img{
+    position: absolute;
+    right: -600px;
+    top:0;
+    max-width: 100%;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1s;
+}
+.product-name h1{
+    font-family: 'Lato', sans-serif;
+    float: left;
+    font-size: 30px;
+    color: #706f6f;
+    -webkit-animation: fadeinLoad 1s 2s forwards;
+    animation: fadeinLoad 1s 2s forwards;
+    opacity: 0;
+}
+.product-name{
+    margin-left:3%;
+    flex: left;
+}
+.robo{
+    -webkit-animation: fadeinLoad 1s 3s forwards;
+    animation: fadeinLoad 1s 3s forwards;
+    opacity: 0;
+    float: left;
+}
+.product-div{
+    float: left;
+}
+
+@-webkit-keyframes fadeinLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeinLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide {
+    100% { right: 0; }
+}
+
+@keyframes slide {
+    100% { right: 0; }
+}
+
+.product-div{
+    position: relative;
+    float: left;
+}
+.product-div a{
+    position: absolute;
+    width: 100px;
+    float: left;
+    height: 100px;
+    background: #706f6f;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 5;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.18);
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+.product-div h2{
+    float: left;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #706f6f;
+    -webkit-animation: fadeinLoad 1s 4s forwards;
+    animation: fadeinLoad 1s 4s forwards;
+    opacity: 0;
+    margin-top: 15%;
+}
+.product-div a.one{
+    top: 144%;
+    right: -10%;
+    background: #da6a13;
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+      -webkit-animation: fadeinLoad 1s 5s forwards;
+    animation: fadeinLoad 1s 5s forwards;
+    opacity: 0;
+}
+.product-div a.one:hover{
+    color: #da6a13;
+    border-color:#da6a13;
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease; 
+}
+.product-div a.two{
+    top: 190%;
+    right: 70%;
+    background: #0d9b5f;
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+        -webkit-animation: fadeinLoad 1s 6s forwards;
+    animation: fadeinLoad 1s 6s forwards;
+    opacity: 0;
+}
+.product-div a.two:hover{
+    color: #0d9b5f;
+    border-color:#0d9b5f; 
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+.product-div a.three{
+        top: 330%;
+    right: 60%;
+    background: #8f5214;
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+        -webkit-animation: fadeinLoad 1s 7s forwards;
+    animation: fadeinLoad 1s 7s forwards;
+    opacity: 0;
+}
+.product-div a.three:hover{
+    color: #8f5214;
+    border-color:#8f5214; 
+ -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+.product-div a.four{
+    top: 280%;
+    right: 35%;
+    background: #1a5276;
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+        -webkit-animation: fadeinLoad 1s 8s forwards;
+    animation: fadeinLoad 1s 8s forwards;
+    opacity: 0;
+}
+.product-div a.four:hover{
+    color: #1a5276;
+    border-color:#1a5276; 
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+.product-div a.five{
+    top: 230%;
+    right: 10%;
+     background: #000;
+      -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+        -webkit-animation: fadeinLoad 1s 9s forwards;
+    animation: fadeinLoad 1s 9s forwards;
+    opacity: 0;
+}
+.product-div a.five:hover{
+    color: #000;
+    border-color:#000; 
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+.product-div a.six{
+    top: 130%;
+    right: 30%;
+    background: #e9473e;
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+        -webkit-animation: fadeinLoad 1s 10s forwards;
+    animation: fadeinLoad 1s 10s forwards;
+    opacity: 0;
+}
+.product-div a.six:hover{
+    color: #e9473e;
+    border-color:#e9473e; 
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+.product-div a.seven{
+   top: 350%;
+    right: 0;
+    background: #ffc300;
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+        -webkit-animation: fadeinLoad 1s 11s forwards;
+    animation: fadeinLoad 1s 11s forwards;
+    opacity: 0;
+}
+.product-div a.seven:hover{
+    color: #ffc300;
+    border-color:#ffc300;
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease; 
+}
+.product-div a.eight{
+    top: 280%;
+    background: #581845;
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+  -webkit-animation: fadeinLoad 1s 12s forwards;
+    animation: fadeinLoad 1s 12s forwards;
+    opacity: 0;
+}
+.product-div a.eight:hover{
+    color: #581845;
+    border-color:#581845; 
+     -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+.product-div a:hover{
+    background: #fff;
+    color: #000;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
