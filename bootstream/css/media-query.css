@@ -58,3 +58,38 @@
     left:10%;
 }
 }
+@media screen and (max-width: 414px){
+.logo-div img {
+    top: 47px;
+    left: -76px;
+}
+.product-div a.two{
+    right: 79%;
+}
+.product-div a.three{
+    right:75%;
+}
+.product-div a.four,.product-div a.six{
+    right:45%;
+}
+.product-div a.one {
+    top: 105%;
+    right: 9%;
+    }
+
+.product-div a.eight {
+    top: 100%;
+    right: 0;
+    left: 0;
+}
+.product-div a.seven {
+    top: 377%;
+    right: 19%;
+
+}
+.robo {
+   margin-top: 1%;
+    max-width: 63%;
+    left:11%;
+    }
+}
