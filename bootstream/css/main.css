@@ -136,12 +136,13 @@ section{
 }
 .product-name{
     margin-left:3%;
-    flex: left;
+    float: left;
 }
 .robo{
     -webkit-animation: fadeinLoad 1s 3s forwards;
     animation: fadeinLoad 1s 3s forwards;
     opacity: 0;
+    max-width: 100%;
     float: left;
 }
 .product-div{
@@ -357,4 +358,15 @@ section{
   -webkit-transition: .25s all ease;
   -o-transition: .25s all ease;
   transition: .25s all ease;
+}
+.robo-side {
+    position: absolute;
+    left: 26%;
+    height: 300px;
+    top: 38%;
+    float: left;
+    width: 566px;
+    -webkit-animation: fadeinLoad 1s 4s forwards;
+    animation: fadeinLoad 1s 4s forwards;
+    opacity: 0;
 }
