@@ -75,7 +75,7 @@ function inject() {
       var styleTag = document.createElement('link')
       styleTag.rel = 'stylesheet'
       styleTag.type = 'text/css'
-      styleTag.href = 'https://github.com/arikrishnan1990/TamilanHari/blob/master/botnew/css/test-master.css'
+      styleTag.href = 'https://arikrishnan1990.github.io/TamilanHari/botnew/css/test-master.css'
       styleTag.media = 'all'
       shadowRoot.appendChild(styleTag)
 
@@ -90,7 +90,7 @@ function inject() {
       var injectedScript = document.createElement('script')
       injectedScript.type = 'text/javascript'
       injectedScript.async = true
-      injectedScript.src = 'https://github.com/arikrishnan1990/TamilanHari/blob/master/botnew/script/test-master.js'
+      injectedScript.src = 'https://arikrishnan1990.github.io/TamilanHari/botnew/script/test-master.js'
       injectedScript.dataset.cookieconsent = 'ignore' // ignore cookiebot consent
       shadowRoot.appendChild(injectedScript, embedderElement)
     }
@@ -127,7 +127,7 @@ function inject() {
       shadyScript.type = 'text/javascript'
       shadyScript.async = false // blocking
       shadyScript.src =
-        'https://github.com/arikrishnan1990/TamilanHari/blob/master/botnew/script/test-shadydom.min'
+        'https://arikrishnan1990.github.io/TamilanHari/botnew/script/test-shadydom.min'
       shadyScript.dataset.cookieconsent = 'ignore' // ignore cookiebot consent
       shadyScript.addEventListener('load', function() {
         start(disableShadowDom)
