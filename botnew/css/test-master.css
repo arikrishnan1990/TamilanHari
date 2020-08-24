@@ -3182,11 +3182,9 @@ textarea {
   text-align: left;
 }
 @media screen and (max-width: 600px) {
-
 .botcopy .botcopy--bot-chat-window .botcopy--bot-header > div:nth-child(2) {
-  padding: 0 !important;
-  background: var(--bcHeaderFillColor) !important;
-}
+    left: 14%;
+  }
 }
 
 /*# sourceMappingURL=master.css.map*/
