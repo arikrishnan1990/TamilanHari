@@ -825,7 +825,7 @@ body {
     left: 14%;
   }
   .botcopy .botcopy--bot-text-message{
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 }
 .botcopy .botcopy--bot-chat-window .botcopy--bot-header > div:nth-child(2) {
