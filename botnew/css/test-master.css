@@ -824,6 +824,9 @@ body {
 .botcopy .botcopy--bot-chat-window .botcopy--bot-header > div:nth-child(2) {
     left: 14%;
   }
+  .botcopy .botcopy--bot-text-message{
+    margin-right: 0;
+  }
 }
 .botcopy .botcopy--bot-chat-window .botcopy--bot-header > div:nth-child(2) {
   padding: 0 !important;
