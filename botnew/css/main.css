@@ -1,0 +1,260 @@
+
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    pasific flight service
+Last change:    Initial RELEASED
+Primary use:    MultiPurpose many Page Template  
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Common styles
+2. Page loader / .page-loader
+3. Typography
+4. Buttons
+5. Forms fields
+6. Home sections / .home-section
+    6.1. Home content
+    6.2. Scroll down icon
+    6.3. Headings styles
+9. Sections styles / .page-section, .small-section, .split-section
+10. Services / .service-grid
+11. Team / .team-grid
+12. Features
+13. Shortcodes
+    27.1. Owl Carousel
+    27.2. Tabs
+    27.3. Tabs minimal
+    27.4. Alert messages
+    27.5. Accordion
+    27.6. Toggle
+    27.7. Progress bars
+    27.8. Font icons examples
+    27.9. Intro page
+14. Bootstrap multicolumn grid
+
+
+/*------------------------------------------------------------------
+# [Color codes]
+
+# Red (error) #b80617
+
+# Gray #4a4b4d
+
+
+# */
+
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body:               normal 14px/20px 'montserratregular';
+Headers:            montserrathairline;
+Section Title:      bold 3.6em/1.2em 'montserrathairline';
+Section Text:       normal 1.3em/1.6em 'montserratlight';
+
+-------------------------------------------------------------------*/
+
+
+
+/*reset*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,li,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:center;background:transparent}
+body{line-height:1;font-family: 'Lato', sans-serif;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+html{
+    position: relative;
+}
+.clearfix{ 
+    display: block }
+* html .clearfix {
+    height: 1% }
+.clearfix:after {
+    display: block;
+    height: 0;
+    clear: both;
+    content: '.';
+    visibility: hidden;}
+*+html .clearfix {
+    display: inline-block }
+    
+a{color:#4a4b4d;text-decoration:none}
+a:hover{color:#b80617;text-decoration:none}
+h1,h2,h3,h4,h5,h6{font: bold 3.6em/1.2em 'Conv_DINBdA';}
+ul,ul li{list-style:none;margin:0;padding:0}    
+.left{float:left}
+.right{float:right}
+body{
+    width:100%;
+    height:100%;
+    /*background-image: url(../images/back.jpg);*/
+    background-repeat: repeat;
+    background-position: center top,0 0;
+    background-size: auto,cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.back{
+    width: 60%;
+    height: 100%;
+    background-size: contain;
+
+    position: absolute; 
+    -webkit-animation: fadeinLoad 1s 3s forwards;
+    animation: fadeinLoad 1s 3s forwards;
+    opacity: 0;
+}
+header{
+    padding: 3% 0;
+}
+section{
+        /*background: #a7d6c9;*/
+}
+.logo-div{
+    width:245px;
+    float: right;
+    margin-right:3%;
+    position: relative;
+}
+.logo-div img{
+    position: absolute;
+    right: -600px;
+    top:0;
+    max-width: 100%;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1s;
+}
+.product-name h1{
+    font-family: 'Lato', sans-serif;
+    float: left;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    -webkit-animation: fadeinLoad 1s 2s forwards;
+    animation: fadeinLoad 1s 2s forwards;
+    opacity: 0;
+}
+.product-name{
+    margin-left:3%;
+    float: left;
+}
+/*.robo{
+    -webkit-animation: fadeinLoad 1s 3s forwards;
+    animation: fadeinLoad 1s 3s forwards;
+    opacity: 0;
+    width: 50%;
+    float: left;
+}*/
+.product-div{
+    float: right;
+    width:50%;
+    text-align: center;
+    position: relative;
+}
+
+@-webkit-keyframes fadeinLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeinLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide {
+    100% { right: 0; }
+}
+
+@keyframes slide {
+    100% { right: 0; }
+}
+
+.product-div a{
+    /*float: left;
+    width: 100px;
+    height: 100px;
+    background: #706f6f;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 5;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.18);
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    margin:5px;*/
+    width: auto;
+    margin: auto;
+    text-transform: uppercase;
+    float: none;
+    background: url(https://cdn2.hubspot.net/hubfs/4367386/buttonsFR.png) no-repeat center top;
+    letter-spacing: 1px;
+    color: #FFF;
+    display: inline-block;
+    font-size: 16px ;
+    font-weight: 400;
+    width: 100px;
+    height: 80px;
+    line-height: 5;
+    padding: 13px 8px 13px 15px ;
+    text-align: center;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+    background-size: 100% 210%;
+    margin: 5px;
+    -webkit-animation: fadeinLoad 1s 5s forwards;
+    animation: fadeinLoad 1s 5s forwards;
+    opacity: 0;
+}
+.product-div a:hover{
+  filter: drop-shadow(2px 4px 6px rgba(86, 238, 255));
+}
+.product-div h2{
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    -webkit-animation: fadeinLoad 1s 4s forwards;
+    animation: fadeinLoad 1s 4s forwards;
+    opacity: 0;
+    margin: 30px 0;
+}
+.product-div-ancor{
+  float: left;
+  width:60%;
+  margin-left: 20%;
+}
