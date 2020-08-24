@@ -823,7 +823,13 @@ body {
     max-width: 270px;
   }
 }
+@media screen and (max-width: 600px) {
 
+.botcopy .botcopy--bot-chat-window .botcopy--bot-header > div:nth-child(2) {
+  padding: 0 !important;
+  background: var(--bcHeaderFillColor) !important;
+}
+}
 .botcopy .botcopy--bot-chat-window .botcopy--bot-header > div:nth-child(2) {
   padding: 0 !important;
   background: var(--bcHeaderFillColor) !important;
