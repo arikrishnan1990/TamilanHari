@@ -3186,6 +3186,9 @@ textarea {
 .botcopy .botcopy--bot-chat-window .botcopy--bot-header > div:nth-child(2) {
     left: 14%;
   }
+  .botcopy .botcopy--bot-text-message{
+    margin-right: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=master.css.map*/
