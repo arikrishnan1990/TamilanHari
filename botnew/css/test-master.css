@@ -2213,7 +2213,7 @@ textarea {
 
 .botcopy .botcopy--bot-chat-window .botcopy--bot-quickreplies {
   border-radius: 0;
-  float left;
+  float:left;
   background: var(--quickButtonBackground);
   border: 1.5px solid var(--quickButtonBorder);
   color: var(--quickTextColor);
