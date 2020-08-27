@@ -2222,7 +2222,7 @@ textarea {
   top: 0 !important;
   line-height: normal;
   margin: 0 5px 5px 0;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -2279,6 +2279,8 @@ textarea {
   font-family: var(--bcFontType), sans-serif;
   display: table;
   border-radius: 15px 15px 15px 0;
+  border: 1px solid #cec8c8;
+  padding:7px;
   margin-right: 100px;
   margin-left: 0.3em;
   min-height: 42px; /* should be the same as .typing-indicator min-height */
