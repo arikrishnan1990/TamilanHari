@@ -2212,7 +2212,7 @@ textarea {
 /* Quick Replies */
 
 .botcopy .botcopy--bot-chat-window .botcopy--bot-quickreplies {
-  border-radius: 10px;
+  border-radius: 0;
   background: var(--quickButtonBackground);
   border: 1.5px solid var(--quickButtonBorder);
   color: var(--quickTextColor);
@@ -2222,7 +2222,7 @@ textarea {
   top: 0 !important;
   line-height: normal;
   margin: 0 5px 5px 0;
-  padding: 10px 15px;
+  padding: 10px;
   cursor: pointer;
   -moz-user-select: none;
   -webkit-user-select: none;
