@@ -3195,7 +3195,7 @@ botcopy--bot-text-message
     margin-right: 0 !important;
   }
 }
-.botcopy--bot-quickreplies [data-reply="yes"]{
+[data-reply="yes"]{
   margin-left:10% !important;
 }
 /*# sourceMappingURL=master.css.map*/
