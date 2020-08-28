@@ -3195,7 +3195,7 @@ botcopy--bot-text-message
     margin-right: 0 !important;
   }
 }
-[data-value="yes"]{
+button[data-value="yes"]{
   margin-left:10% !important;
 }
 /*# sourceMappingURL=master.css.map*/
