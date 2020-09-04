@@ -1559,7 +1559,7 @@ textarea {
     visibility: hidden; } }
 .botcopy .botcopy--gallery-container .botcopy--gallery-image {
   position: relative;
-  padding-top: 56.52%;
+  padding-top: 30%;
   background: var(--cardBackground);
 }
 
