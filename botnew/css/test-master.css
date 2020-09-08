@@ -2043,7 +2043,8 @@ textarea {
 .botcopy .botcopy--list-message {
   background: var(--cardBackground);
   border: 1.5px solid var(--cardBorder);
-  border-radius: 20px;
+  border-radius:0;
+  border-left-bottom-radius:20px;
   margin: 8px 30px 0 0.3em;
   overflow: hidden;
 }
