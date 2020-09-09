@@ -1,0 +1,219 @@
+/*
+Template Name:Matrimony
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+body{
+position: relative;
+font-family:'DM Sans', 'Philosopher', sans-serif; 
+background-color: #fdfdfd;
+margin: 0;
+  }
+h1,h2,h3,h4,h5,h6{
+padding:0;
+color: #203650;
+margin:0;
+}
+a{
+  color: #42ca66;
+  text-decoration: none;
+}
+a:hover{
+text-decoration:none;
+color: #203650;
+}
+ul{
+padding:0;
+margin:0;
+list-style:none;
+}
+p{
+padding:0;
+margin:0;
+color: #203650;
+}
+.input-text{	
+display: block;
+width: 100%;
+color: #555;
+height: 34px;
+padding: 6px 12px;
+font-size: 12px;
+font-weight: 700;
+}
+.logo{
+  float: left;
+}
+.logo{
+  max-width: 150px;
+  text-align: center;
+}
+.landing .logo{
+  float: none;
+  margin:0 auto;
+}
+.logo h1{
+  font-size:23px;
+  font-family:'Philosopher', sans-serif; 
+  color: #42ca66;
+}
+.logo a{
+  display: block;
+  color: #42ca66;
+    font-size: 20px;
+}
+.logo img{
+  display: block;
+  max-width: 100%;
+}
+.landing{
+  display: table;
+  max-width: 500px;
+  text-align: center;
+  margin:3% auto;
+}
+.landing .main h2,.main-div h2,.collage-div h4{
+  margin: 25px 0;
+  font-size: 30px;
+
+}
+.landing .main {
+  display: block;
+  text-align: center;
+}
+.social-list{
+  display: inline-block;
+}
+.social h3{
+  font-size: 20px;
+}
+.social-list li{
+  float: left;
+  margin:0 10px;
+}
+.main a{
+  display: table;
+  font-size: 25px;
+  margin: 15px auto;
+  text-align: center;
+}
+.main a span{
+  color:#203650;
+  font-size: 17px;
+}
+.social{
+  margin-top: 70px;
+}
+.container{
+  max-width: 1046px;
+  margin: 0 auto;
+}
+.nav{
+  float: right;
+  margin-top: 35px;
+}
+.menu-list li{
+  float: left;
+  margin-right: 25px;
+}
+.menu-list li a{
+  font-size: 18px;
+  color:#203650;
+}
+.menu-list li a:hover{
+  color:#42ca66;
+}
+header{
+  display: table;
+  margin: 10px 0;
+  width:100%;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+}
+.btn{
+    font-size:17px;
+    line-height: 1rem;
+    position: relative;
+    padding: 12px 30px;
+    background: #ebf2f9;
+    border-radius: 999999px;
+    display: inline-block;
+}
+.nav .btn{
+  position: relative;
+  top:-10px;
+}
+.main-div{
+  position: relative;
+}
+.cover-div{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  background: #00000070;
+  z-index: 1;
+}
+.jssora051,.jssorb132{
+  z-index: 2;
+}
+.main-div h2{
+  font-family: 'Philosopher', sans-serif;
+  color: #49ca66;
+  letter-spacing: 4px;
+}
+.main-div p{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.slider-text{
+  max-width: 50%;
+  margin:8% auto;
+}
+.find-dreams,.collage{
+  padding: 60px 0;
+  display: table;
+  width: 100%;
+}
+.collage{
+  background: #ebf2f9;
+}
+.collage-div h4{
+  text-align: center;
+  font-family: 'Philosopher', sans-serif;
+  color: #49ca66;
+  margin-bottom: 25px
+}
+.find-dreams .fa{
+  font-size: 120px;
+  color: #ebf2f9;
+}
+.dream-div{
+  text-align: center;
+  width: 32%;
+  float: left;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  padding: 15px;
+  border: 1px solid #ebf2f9;
+  box-sizing: border-box;
+}
+.dream-div h4{
+  font-size: 25px;
+  min-height: 80px;
+  max-width: 70%;
+  margin:20px auto 0 auto;
+}
+.dream-div p{
+  font-size: 15px;
+  margin: 0 auto 0;
+  min-height: 55px;
+  max-width: 70%;
+}
+.dream-div:hover i{
+  color: #49ca66;
+}
